@@ -11,7 +11,7 @@ import rootReducer from './modules';
 const store = createStore(rootReducer, composeWithDevTools());
 
 ReactDOM.render(
-  <Provider store={store}>
+  <Provider store={store}> //한개의 스토어에 오로지 APP콤포넌트를 등록 시키고
     <App />
   </Provider>,
   document.getElementById('root'),
